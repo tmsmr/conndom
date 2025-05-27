@@ -1,0 +1,3 @@
+[submodule "pcb/libs/rpi-zero-2-w-testpads.pretty"]
+	path = pcb/libs/rpi-zero-2-w-testpads.pretty
+	url = https://github.com/tmsmr/rpi-zero-2-w-testpads.pretty.git
