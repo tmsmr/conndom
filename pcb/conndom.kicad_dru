@@ -1,0 +1,11 @@
+(version 1.1)
+(rule "Max Drill Hole Size PTH"
+    (constraint hole_size (max 5.6mm))
+    (condition "A.Pad_Type == 'Through-hole'"))
+(rule "Disallow buried via"
+   (constraint disallow buried_via))
+(rule "Disallow micro via"
+   (constraint disallow micro_via))
+(rule "Disallow solder mask margin overrides"
+    (constraint assertion "A.Soldermask_Margin_Override == 0mm")
+    (condition "A.Type == 'Pad'"))
