@@ -1,2 +1,4 @@
 conndom-backups/
 fp-info-cache
+fab/
+*.lck
