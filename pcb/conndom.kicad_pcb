@@ -151,7 +151,6 @@
 	(net 10 "Net-(JG2-Pin_1)")
 	(net 11 "Net-(JG3-Pin_1)")
 	(footprint "Resistor_SMD:R_0805_2012Metric"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "20ef2f9c-26e5-4b8f-baeb-400f2abae693")
 		(at 176.9 85.1125 90)
@@ -351,7 +350,6 @@
 		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "28273cf0-9a71-468f-b311-ac12ba9283e8")
 		(at 161.3 81.55 180)
@@ -686,7 +684,6 @@
 		(embedded_fonts no)
 	)
 	(footprint "UJ2-AH-4-TH:CUI_UJ2-AH-4-TH"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "3e17dac3-df01-44bf-98c8-769d99e28cd2")
 		(at 159.6 104.3 90)
@@ -1328,7 +1325,6 @@
 		(embedded_fonts no)
 	)
 	(footprint "UJC-HP2-3-SMT-TR:CUI_UJC-HP2-3-SMT-TR"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "813cda7b-34b0-4dc8-b769-a9e8b810d3b4")
 		(at 184.2 87 90)
@@ -2313,7 +2309,6 @@
 		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "d6cb0068-415c-441d-83af-e55d66aa0546")
 		(at 176.9 88.8875 -90)
@@ -2513,7 +2508,6 @@
 		)
 	)
 	(footprint "TS02-66-55-BK-260-LCR-D:SW_TS02-66-55-BK-260-LCR-D"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "e0e84f0f-f82f-4117-9f1c-d6ac43601d1b")
 		(at 161.35 87 -90)
@@ -2913,7 +2907,6 @@
 		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "f53d7cf2-7e25-4f87-b635-2bb08ef11489")
 		(at 166.75 87.0375 -90)
@@ -3113,7 +3106,6 @@
 		)
 	)
 	(footprint "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "fe73156d-02c6-41e6-bf24-e2ddfde62d8f")
 		(at 171.7445 87 -90)
