@@ -405,7 +405,7 @@
 		(path "/d833bc0b-8399-496e-b8d6-50667a727696")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd dnp)
+		(attr smd exclude_from_bom dnp)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -604,7 +604,7 @@
 				)
 			)
 		)
-		(attr smd)
+		(attr smd board_only exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -65 -3)
 			(end -65 -27)
@@ -1062,7 +1062,7 @@
 		(path "/b710468d-a6be-4b4b-be93-5eddd559c911")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0.5 0.8)
@@ -1169,7 +1169,7 @@
 		(path "/e515aa87-5612-465e-a35e-482a8eb8698b")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0.5 0.8)
@@ -1276,7 +1276,7 @@
 		(path "/0093d2af-3766-445e-a670-b7cae6de3fe7")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.1)
@@ -1740,7 +1740,7 @@
 		(path "/b02ab89f-25a1-4f94-b276-cb891aea3861")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0.5 0.8)
@@ -1847,7 +1847,7 @@
 		(path "/6c257d42-ec96-4292-b381-b17895c7cdd8")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.1)
@@ -1954,7 +1954,7 @@
 		(path "/244eb979-01f1-47e0-ae21-a6896b64dbbb")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0.5 0.8)
@@ -2058,7 +2058,7 @@
 		(path "/05306809-ae32-4998-accd-14a6b7979bdd")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd dnp)
+		(attr smd exclude_from_bom dnp)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -2260,7 +2260,7 @@
 		(path "/8ef038cb-bd8e-4bd5-b177-dbaf08599c69")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.1)
@@ -2858,7 +2858,7 @@
 		(path "/3b0e5255-d26f-4874-bb81-973a8be2c7cf")
 		(sheetname "/")
 		(sheetfile "conndom.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0.5 0.8)
