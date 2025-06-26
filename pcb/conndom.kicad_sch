@@ -2640,7 +2640,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "104"
+		(property "Value" "104n"
 			(at 220.98 123.1899 0)
 			(effects
 				(font
@@ -2658,7 +2658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 217.17 121.92 0)
 			(effects
 				(font
@@ -2676,7 +2676,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "~"
+		(property "Manufacturer" ""
 			(at 217.17 121.92 0)
 			(effects
 				(font
@@ -2685,7 +2685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfg Part #" "~"
+		(property "Mfg Part #" ""
 			(at 217.17 121.92 0)
 			(effects
 				(font
@@ -2694,7 +2694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0805"
+		(property "Package" ""
 			(at 217.17 121.92 0)
 			(effects
 				(font
@@ -2703,7 +2703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "SMD"
+		(property "Type" ""
 			(at 217.17 121.92 0)
 			(effects
 				(font
@@ -3017,7 +3017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Same Sky"
 			(at 96.52 107.95 0)
 			(effects
 				(font
@@ -3026,7 +3026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfg Part #" ""
+		(property "Mfg Part #" "UJ2-AH-4-TH"
 			(at 96.52 107.95 0)
 			(effects
 				(font
@@ -3035,7 +3035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" ""
+		(property "Package" "~"
 			(at 96.52 107.95 0)
 			(effects
 				(font
@@ -3044,7 +3044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" ""
+		(property "Type" "SMD/THT"
 			(at 96.52 107.95 0)
 			(effects
 				(font
@@ -3813,7 +3813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Same Sky"
 			(at 189.23 123.19 90)
 			(effects
 				(font
@@ -3822,7 +3822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfg Part #" ""
+		(property "Mfg Part #" "TS02-66-55-BK-260-LCR-D"
 			(at 189.23 123.19 90)
 			(effects
 				(font
@@ -3831,7 +3831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" ""
+		(property "Package" "~"
 			(at 189.23 123.19 90)
 			(effects
 				(font
@@ -3840,7 +3840,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" ""
+		(property "Type" "THT"
 			(at 189.23 123.19 90)
 			(effects
 				(font
@@ -4026,7 +4026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Same Sky"
 			(at 53.34 113.03 0)
 			(effects
 				(font
@@ -4035,7 +4035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfg Part #" ""
+		(property "Mfg Part #" "UJC-HP2-3-SMT-TR"
 			(at 53.34 113.03 0)
 			(effects
 				(font
@@ -4044,7 +4044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" ""
+		(property "Package" "~"
 			(at 53.34 113.03 0)
 			(effects
 				(font
@@ -4053,7 +4053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" ""
+		(property "Type" "SMD/THT"
 			(at 53.34 113.03 0)
 			(effects
 				(font
@@ -4155,7 +4155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "~"
 			(at 241.3 121.92 0)
 			(effects
 				(font
@@ -4164,7 +4164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfg Part #" ""
+		(property "Mfg Part #" "~"
 			(at 241.3 121.92 0)
 			(effects
 				(font
@@ -4173,7 +4173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" ""
+		(property "Package" "~"
 			(at 241.3 121.92 0)
 			(effects
 				(font
@@ -4182,7 +4182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" ""
+		(property "Type" "SMD"
 			(at 241.3 121.92 0)
 			(effects
 				(font
@@ -4571,7 +4571,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10K"
 			(at 206.502 101.6 90)
 			(effects
 				(font
@@ -4768,7 +4768,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e976379c-a355-42aa-b469-10ce265307e0")
 		(property "Reference" "R1"
 			(at 76.2 124.4599 0)
