@@ -2,7 +2,7 @@
 *WiP*
 
 ### PCB
-<img src="docs/conndom-pcb.png" alt="Description 1" width="400" />
+<img src="docs/conndom-pcb-0.3.png" alt="Description 1" width="400" />
 
 #### BOM
 
@@ -16,7 +16,7 @@
 | D1         | 1        | SK6812      | Adafruit | 1655                    | 10 Pack |
 
 ### PCB Assembly
-<img src="docs/pcb-assembly-top.png" alt="Description 2" width="400" />
+<img src="docs/conndom-assembly-front.png" alt="Description 2" width="400" />
 
 ### PCB Assembly Bottom
-<img src="docs/pcb-assembly-bottom.png" alt="Description 3" width="400" />
+<img src="docs/conndom-assembly-back.png" alt="Description 3" width="400" />
