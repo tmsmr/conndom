@@ -1,0 +1,6 @@
+{
+  "name": "Conndom Development Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/conndom"
+}
