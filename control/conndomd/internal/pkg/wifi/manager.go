@@ -11,8 +11,9 @@ import (
 var once sync.Once
 
 type Manager struct {
-	nm   gonm.NetworkManager
-	conf env.Spec
+	nm       gonm.NetworkManager
+	settings gonm.Settings
+	conf     env.Spec
 }
 
 func NewManager(conf env.Spec) (*Manager, error) {
@@ -25,9 +26,14 @@ func NewManager(conf env.Spec) (*Manager, error) {
 	if err != nil {
 		return nil, err
 	}
+	settings, err := gonm.NewSettings()
+	if err != nil {
+		return nil, err
+	}
 	return &Manager{
-		nm:   nm,
-		conf: conf,
+		nm:       nm,
+		settings: settings,
+		conf:     conf,
 	}, nil
 }
 

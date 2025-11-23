@@ -10,14 +10,19 @@ const (
 	apScanTimeoutSeconds = 30
 )
 
-type Network struct {
-	Ssid       string
+type NetworkFrequency struct {
 	Frequency  uint32
+	Channel    uint8
 	Strength   uint8
 	MaxBitrate uint32
 }
 
-func (d StaDevice) Scan() ([]Network, error) {
+type Network struct {
+	Private     bool
+	Frequencies []NetworkFrequency
+}
+
+func (d StaDevice) Scan() (map[string]Network, error) {
 	wd, err := gonm.NewDeviceWireless(d.Path)
 	if err != nil {
 		return nil, err
@@ -44,7 +49,7 @@ func (d StaDevice) Scan() ([]Network, error) {
 	if err != nil {
 		return nil, err
 	}
-	networks := make([]Network, 0, len(aps))
+	networks := make(map[string]Network)
 	for _, ap := range aps {
 		ssid, err := ap.GetPropertySSID()
 		if err != nil {
@@ -62,12 +67,20 @@ func (d StaDevice) Scan() ([]Network, error) {
 		if err != nil {
 			return nil, err
 		}
-		networks = append(networks, Network{
-			Ssid:       ssid,
+		flags, err := ap.GetPropertyFlags()
+		if err != nil {
+			return nil, err
+		}
+		network, ok := networks[ssid]
+		if !ok {
+			network = Network{Private: flags != 0}
+		}
+		network.Frequencies = append(network.Frequencies, NetworkFrequency{
 			Frequency:  frequency,
 			Strength:   strength,
 			MaxBitrate: maxBitrate,
 		})
+		networks[ssid] = network
 	}
 	return networks, nil
 }

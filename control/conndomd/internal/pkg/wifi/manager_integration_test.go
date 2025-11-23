@@ -7,13 +7,12 @@ import (
 	"github.com/tmsmr/conndom/conndomd/internal/pkg/wifi"
 )
 
-const forwardedDbusSocket = "/tmp/conndom_dbus_system.sock"
-
 func TestManager_GetStaDevice(t *testing.T) {
-	m, err := wifi.NewManager(env.Spec{
-		DbusSystemBusAddress: forwardedDbusSocket,
-		StaWifiInterface:     "wlan1",
-	})
+	conf, err := env.Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	m, err := wifi.NewManager(*conf)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -24,10 +23,11 @@ func TestManager_GetStaDevice(t *testing.T) {
 }
 
 func TestDevice_Scan(t *testing.T) {
-	m, err := wifi.NewManager(env.Spec{
-		DbusSystemBusAddress: forwardedDbusSocket,
-		StaWifiInterface:     "wlan1",
-	})
+	conf, err := env.Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	m, err := wifi.NewManager(*conf)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -39,4 +39,16 @@ func TestDevice_Scan(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+}
+
+func TestManager_ListConnections(t *testing.T) {
+	conf, err := env.Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	m, err := wifi.NewManager(*conf)
+	if err != nil {
+		t.Fatal(err)
+	}
+	_, err = m.ListConfiguredNetworks()
 }
