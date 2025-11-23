@@ -1,4 +1,4 @@
-package network
+package wifi
 
 import (
 	"os"
@@ -11,10 +11,11 @@ import (
 var once sync.Once
 
 type Manager struct {
-	nm gonm.NetworkManager
+	nm   gonm.NetworkManager
+	conf env.Spec
 }
 
-func NewManager(conf env.Config) (*Manager, error) {
+func NewManager(conf env.Spec) (*Manager, error) {
 	once.Do(func() {
 		if err := os.Setenv(DbusSystemBusAddrEnv, conf.DbusSystemBusAddress); err != nil {
 			panic(err)
@@ -25,6 +26,19 @@ func NewManager(conf env.Config) (*Manager, error) {
 		return nil, err
 	}
 	return &Manager{
-		nm: nm,
+		nm:   nm,
+		conf: conf,
 	}, nil
+}
+
+func (m *Manager) Running() bool {
+	state, err := m.nm.State()
+	if err != nil {
+		return false
+	}
+	return state != gonm.NmStateUnknown
+}
+
+func (m *Manager) Reload() error {
+	return m.nm.Reload(0)
 }

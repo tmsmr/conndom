@@ -4,13 +4,14 @@ import (
 	"github.com/kelseyhightower/envconfig"
 )
 
-type Config struct {
+type Spec struct {
 	DbusSystemBusAddress string `split_words:"true"`
+	StaWifiInterface     string `split_words:"true" default:"wlan1"`
 }
 
-func Load(prefix string) (*Config, error) {
-	var e Config
-	err := envconfig.Process(prefix, &e)
+func Load() (*Spec, error) {
+	var e Spec
+	err := envconfig.Process("", &e)
 	if err != nil {
 		return nil, err
 	}
